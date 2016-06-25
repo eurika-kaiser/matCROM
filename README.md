@@ -2,7 +2,7 @@
 A Matlab library that implements the cluster-based reduced-order modeling (CROM) strategy for time series data and provides tools for its analysis. For details see  Kaiser et. al (2016)  [[JFM](http://dx.doi.org/10.1017/jfm.2014.355), [arXiv](http://arxiv.org/abs/1309.0524)].
 
 ## Example
-Apply CROM to time series data of the chaotic Lorenz system
+Apply CROM to time series data of the chaotic [Lorenz system](https://en.wikipedia.org/wiki/Lorenz_system)
 
 dx/dt = sigma (y-x)
 
