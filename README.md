@@ -20,12 +20,14 @@ The code is published under the [CiteMe OSS license](https://github.com/cite-me/
 
 ## Example
 Apply CROM to time series data of the chaotic Lorenz system
-$$
-	\dot{x} = \sigma(y-x)\\
-    \dot{y} = x (\rho-z) - y\\
-    \dot{z} = x y - \beta z
-$$
-with $$$\sigma = 10$$$, $$$\rho=28$$$, and $$$\beta=8/3$$$.
+
+dx/dt = sigma (y-x)
+
+dy/dt = x (rho-z) - y
+
+dz/dt = x y - beta z
+
+with sigma = 10, rho=28, and beta=8/3.
 
 This is the phase plot of the time series data. Below the clustered Lorenz attractor and the associated transition probability matrix are displayed.
 ![](figures/PhasePlot.png)
