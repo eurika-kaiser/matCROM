@@ -1,0 +1,25 @@
+function q = determineClusterProbVec(c1_Labels)
+
+% ------------------------------------- %
+% --- determine cluster probabilities - %
+% ----@created: 2013-09-24 EK --------- %
+% ----@revised: 2014-02-10 EK check --- %
+% ----@depends:                   ----- %
+% ------------------------------------- %
+
+%% Global variables
+M = length(c1Labels);
+nCluster = max(c1_Labels);
+
+%% Calculate probabilities to be in a cluster
+q = zeros(1,nCluster);
+for iCluster = 1:nCluster
+    n_labels    = c1_Labels((c1_Labels == iCluster));
+    q(iCluster) = length(n_labels)/M;
+end
+
+%% check
+    if checkClusterProbVec(q,eps) ~= 1
+        return;
+    end
+

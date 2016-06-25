@@ -1,0 +1,32 @@
+function params_def = get_GA_params_default
+import geneticalg.*
+
+% GA parameters
+params_def.NBR_generations      = 100;
+params_def.NBR_candidates 	= 10;
+params_def.NBR_sensors    	= 1;
+params_def.NBR_controls   	= 1;
+params_def.NBR_states           = 10;
+%params_def.control_value_range = [-1,1];
+
+%  GA parameters
+params_def.generation_method ='random_binary';
+params_def.gaussigma         = 3;
+
+%  Optimization parameters
+params_def.elitism           = 1;
+params_def.replication       = 0.1;
+params_def.mutation          = 0.2;
+
+%  Mode  
+params_def.evaluation_method='standalone_function';
+
+% Objective function
+params_def.objective_function='OF_demo';
+
+% Additional settings
+params_def.save    = 1;
+params_def.verbose = [0,0,0,1,0,0];
+params_def.show    = 1;
+
+end

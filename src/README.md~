@@ -1,0 +1,13 @@
+# CROM
+ 
+## Getting started
+
+1. See documentation in folder 'doc'
+2. Folder structure:
+```
+CROM 
+   -- libmtlb : source files
+   -- Project : execution files; results in 'output'
+   -- doc     : documentation & sources
+```
+3. ergfr 	
