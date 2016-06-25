@@ -36,7 +36,7 @@ eps = 10^(-12); % Fehler
 D2 = D.^2;
 A  = -0.5 .* D2; 
 
-%% Step 2 - Construct B = (bij) mit bij = aij - ai. - a.j + a..
+%% Step 2 - Construct B = (bij) with bij = aij - ai. - a.j + a..
 for i = 1:nCluster
     a_idot(i) = 1/nCluster*sum(A(i,:));
     a_dotj(i) = 1/nCluster*sum(A(:,i));
