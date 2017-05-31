@@ -4,6 +4,7 @@ clear all
 close all
 
 addpath('../src/');
+path2figs = './output/'; mkdir(path2figs)
 
 %% Simulate Lorenz system
 [~, x] = ode45(@ds.LorenzSystem, [0,20],[3,3,3]');
@@ -20,7 +21,7 @@ view(45,20)
 xlabel('x')
 ylabel('y')
 zlabel('z')
-saveas(fhandle,'output/PhasePlot.png')
+saveas(fhandle,[path2figs,'PhasePlot.png'])
 
 
 %% Prepare Data & options 
@@ -44,5 +45,3 @@ params_user.plot    = 1;
 %% CROM
 CROMobj = CROM(Data2crom,params_user);
 CROMobj.run
-
-
